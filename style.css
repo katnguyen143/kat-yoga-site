@@ -12,9 +12,13 @@ header {
   text-align: center;
 }
 
-h1, h2, .btn {
+h1, h2, h3 {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700; /* Bold */
+}
+
+p.lead, .pill, .btn {
+    font-weight: 600; /* Semi-bold for emphasis */
 }
 
 
