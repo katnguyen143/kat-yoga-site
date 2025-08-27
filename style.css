@@ -1,9 +1,9 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #faf8f5;
-  color: #333;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #faf8f5;
+    color: #333;
 }
 
 header {
@@ -11,6 +11,12 @@ header {
   padding: 1em;
   text-align: center;
 }
+
+h1, h2, .btn {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
 
 nav a {
   margin: 0 1em;
