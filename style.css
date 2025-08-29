@@ -493,20 +493,12 @@ footer {
     }
 
 .link-journey {
-    background: var(--teal);
-    color: var(--white);
-    border: 2px solid var(--teal);
-    font-weight: 700;
-    border-radius: 999px;
-    padding: 12px 18px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    color: var(--teal); 
+    font-weight: 600;
+    text-decoration: none; 
+    transition: opacity 0.3s ease;
 }
 
-.btn-teal:hover {
-    background: var(--white);
-    color: var(--teal);
-    box-shadow: 0 4px 12px rgba(43, 166, 166, 0.3);
+.link-journey:hover {
+    opacity: 0.7;
 }
