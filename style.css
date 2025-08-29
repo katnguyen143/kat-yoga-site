@@ -493,9 +493,9 @@ footer {
     }
 
 .link-journey {
-    color: var(--teal); 
+    color: var(--teal) !important;
     font-weight: 600;
-    text-decoration: none; 
+    text-decoration: none;
     transition: opacity 0.3s ease;
 }
 
