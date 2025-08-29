@@ -138,54 +138,36 @@ header {
     min-height: 74vh;
     display: grid;
     place-items: center;
-    background: linear-gradient(180deg, rgba(16,32,31,.55), rgba(16,32,31,.35)), url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat; /* Replace with your beach/class image */
+    background: linear-gradient(180deg, rgba(16,32,31,.55), rgba(16,32,31,.35)), url('images/your-beach-image.jpg') center/cover no-repeat;
     color: var(--white);
 }
 
-.hero-split {
+.hero-inner {
+    text-align: center;
+    padding: 110px 20px 80px;
+}
+
+.hero h1 {
+    margin: 0 0 14px;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.hero p {
+    margin: 0 auto 26px;
+    max-width: 720px;
+    font-size: clamp(16px, 2.2vw, 20px);
+    opacity: 0.96;
+}
+
+.hero .actions {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 80px 20px;
-    background: var(--sand);
+    gap: 14px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.hero-text {
-    flex: 1 1 400px;
-}
-
-    .hero-text h1 {
-        font-size: clamp(32px, 5vw, 56px);
-        font-weight: 700;
-        margin-bottom: 16px;
-        text-transform: lowercase;
-    }
-
-    .hero-text p {
-        font-size: 20px;
-        color: var(--muted);
-        margin-bottom: 24px;
-    }
-
-.hero-image {
-    flex: 1 1 400px;
-    text-align: center;
-}
-
-    .hero-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: var(--shadow);
-    }
-
-
-.hero-inner {
-    text-align: center;
-    padding: 110px 20px 80px
-}
 
 h1, h2, h3, h4 {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -193,38 +175,6 @@ h1, h2, h3, h4 {
     letter-spacing: 0.3px;
 }
 
-.hero h1 {
-    font-weight: 700;
-}
-
-.cta h3 {
-    font-weight: 700;
-}
-
-.offer h3 {
-    font-weight: 600;
-}
-
-.menu a,
-.btn,
-.pill {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-}
-
-.hero p {
-    margin: 0 auto 26px;
-    max-width: 720px;
-    font-size: clamp(16px,2.2vw,20px);
-    opacity: .96
-}
-
-.hero .actions {
-    display: flex;
-    gap: 14px;
-    justify-content: center;
-    flex-wrap: wrap
-}
 
 /* Sections */
 section {
