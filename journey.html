@@ -9,18 +9,30 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <div class="container nav">
-            <a href="/" class="brand">
-                <img src="/images/logo.png" alt="Kat's Logo" class="logo" />
-                <span>kat nguyen</span>
+            <a class="brand" href="#top" aria-label="Home">
+                <img src="images/kat-logo.png" alt="Kat Yoga logo" class="logo" />
+                <span>yoga & acroyoga with kat <3</span>
             </a>
-            <nav class="menu">
-                <a href="/">home</a>
-                <a href="/#offerings">offerings</a>
-                <a href="/#schedule">schedule</a>
-                <a href="/journey.html" class="btn btn-journey">my journey</a>
+
+            <nav class="menu" aria-label="Primary">
+                <a href="#about">about</a>
+                <<a href="journey.html" class="link-journey">my journey</a>
+                <a href="#offerings">classes</a>
+                <a href="#schedule">schedule</a>
+                <a href="#gallery">gallery</a>
+                <a href="#contact">contact</a>
+                <a class="btn btn-outline" href="#booking">book a class</a>
             </nav>
+
+            <button class="mobile-toggle btn btn-outline" aria-label="Open menu" onclick="
+        const m=document.querySelector('.menu');
+        m.style.display = m.style.display==='flex' ? 'none' : 'flex';
+      ">
+                Menu
+            </button>
         </div>
     </header>
 
