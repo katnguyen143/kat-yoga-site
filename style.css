@@ -565,7 +565,7 @@ h2 {
 /* === Interest Form Section === */
 #interest {
     background: var(--sand);
-    padding: 44px 0;
+    padding: 40px 0 10px;
 }
 
     #interest h2 {
@@ -643,7 +643,8 @@ h2 {
 /* --- Response Message --- */
 #interestResponse {
     text-align: center;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
     font-size: 0.95rem;
     color: var(--muted);
     min-height: 24px;
