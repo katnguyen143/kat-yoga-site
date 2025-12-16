@@ -299,6 +299,13 @@ h2 {
     margin-top: 18px
 }
 
+/* Schedule card descriptions */
+.schedule .lead {
+    color: var(--ink);
+    opacity: 0.9;
+    font-size: 16px;
+}
+
 .slot {
     padding: 18px
 }
