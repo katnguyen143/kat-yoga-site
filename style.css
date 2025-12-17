@@ -247,7 +247,29 @@ h2 {
     display: grid;
     place-items: center;
     color: var(--teal);
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.offer-header h3 {
+  margin: 0;
+}
+
+.card.offer .icon {
+  margin: 0;
+}
+
+.card.offer .icon img {
+  width: 36px;
+  height: auto;
 }
 
 .offer h3 {
@@ -258,7 +280,9 @@ h2 {
 
 .offer p {
     margin: 0;
-    color: var(--muted)
+    color: var(--ink);
+    opacity: 0.9;
+    font-size: 16px;
 }
 
 .offerings {
