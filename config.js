@@ -25,8 +25,8 @@ var config = {
             id: 'berkeley-outsiders',
             title: 'Yoga Instructor — UC Berkeley Outsiders Club',
             subtitle: 'Berkeley, California',
-            date: 'Jan – Dec 2024 · 1 year',
-            description: 'Instructed weekly yoga sessions tailored for BIPOC communities, emphasizing accessibility, inclusion, and mindfulness.',
+            date: 'Jan — Dec 2024 · 1 year',
+            description: 'Instructed weekly vinyasa yoga sessions tailored for BIPOC communities, emphasizing accessibility, inclusion, and mindfulness.',
             image: 'images/outdoor_yoga.JPG',
             location: {
                 center: [-122.259, 37.871],
@@ -54,7 +54,7 @@ var config = {
             title: '200 Hour Yoga Teacher Training — Bali Yoga Ashram',
             subtitle: 'Bali, Indonesia',
             date: 'June 2025',
-            description: 'Earned my 200-hour certification in Bali, studying Ashtanga and Vinyasa yoga, yogic philosophy, pranayama, meditation, anatomy, and alignment.',
+            description: 'Earned my 200-hour YTT certification in Bali, studying Ashtanga and Vinyasa yoga, yogic philosophy, pranayama, meditation, anatomy, and alignment.',
             image: 'images/bali_teachers.JPEG',
             location: {
                 center: [115.28745931505563, -8.539585723396137],
