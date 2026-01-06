@@ -862,60 +862,57 @@ footer {
 
 /* Story panel on the right */
 #story {
-    flex: 0 0 480px;
+    flex: 0 0 420px;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 40px 32px;
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(8px);
+    padding: 32px 24px;
+    background: transparent;
     z-index: 10;
-    box-shadow: -4px 0 24px rgba(0,0,0,.08);
 }
 
 #story::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 #story::-webkit-scrollbar-track {
-    background: rgba(0,0,0,.03);
+    background: transparent;
 }
 
 #story::-webkit-scrollbar-thumb {
-    background: var(--teal);
+    background: rgba(43,166,166,0.4);
     border-radius: 4px;
 }
 
 #story::-webkit-scrollbar-thumb:hover {
-    background: #248f8f;
+    background: rgba(43,166,166,0.6);
 }
 
 /* Story steps */
 .step {
-    margin-bottom: 60vh;
-    opacity: 0.35;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    transform: translateX(20px);
+    margin-bottom: 32px;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
 }
 
 .step:first-child {
-    margin-top: 30vh;
+    margin-top: 5vh;
 }
 
 .step:last-child {
-    margin-bottom: 60vh;
+    margin-bottom: 50vh;
 }
 
 .step.active {
     opacity: 1;
-    transform: translateX(0);
 }
 
 .step .dark,
 .step .light {
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: var(--radius);
-    padding: 32px;
-    box-shadow: var(--shadow);
+    padding: 24px 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.15);
     border-left: 4px solid var(--teal);
 }
 
@@ -961,8 +958,12 @@ footer {
 
 /* Journey intro section */
 #journey-intro {
-    padding: 80px 0 60px;
-    background: var(--white);
+    padding: 80px 0 40px;
+    background: transparent;
+}
+
+#journey-intro .container {
+    text-align: left;
 }
 
 #journey-intro h2 {
@@ -974,10 +975,11 @@ footer {
 
 #journey-intro p {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     font-size: 18px;
     line-height: 1.8;
     color: var(--muted);
+    text-align: left;
 }
 
 /* Journey timeline section */
@@ -1036,8 +1038,7 @@ footer {
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         background: transparent;
-        padding: 20px 16px;
-        box-shadow: none;
+        padding: 16px 12px;
     }
 
     /* Add gradient at top for readability */
@@ -1047,33 +1048,32 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        height: 60px;
-        background: linear-gradient(to bottom, rgba(248,245,241,0.9), transparent);
+        height: 50px;
+        background: linear-gradient(to bottom, rgba(248,245,241,0.8), transparent);
         pointer-events: none;
         z-index: 1;
         display: block;
-        margin: -20px -16px 0;
+        margin: -16px -12px 0;
     }
 
     .step {
-        margin-bottom: 40vh;
-        transform: translateX(0);
+        margin-bottom: 24px;
     }
 
     .step:first-child {
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
 
     .step:last-child {
-        margin-bottom: 50vh;
+        margin-bottom: 40vh;
     }
 
     .step .dark,
     .step .light {
         background: rgba(255, 255, 255, 0.96);
         backdrop-filter: blur(12px);
-        padding: 24px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        padding: 20px 24px;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.15);
     }
 
     .step h3 {
