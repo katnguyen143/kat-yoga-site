@@ -899,7 +899,7 @@ footer {
 }
 
 .step:last-child {
-    margin-bottom: 50vh;
+    margin-bottom: 10vh;
 }
 
 .step.active {
@@ -960,10 +960,24 @@ footer {
 #journey-intro {
     padding: 80px 0 40px;
     background: transparent;
+    position: relative;
+    overflow: visible;
+}
+
+#journey-intro::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal), var(--coral), var(--teal));
 }
 
 #journey-intro .container {
     text-align: left;
+    max-width: 900px;
 }
 
 #journey-intro h2 {
@@ -974,7 +988,7 @@ footer {
 }
 
 #journey-intro p {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0;
     font-size: 18px;
     line-height: 1.8;
@@ -1065,7 +1079,7 @@ footer {
     }
 
     .step:last-child {
-        margin-bottom: 40vh;
+        margin-bottom: 10vh;
     }
 
     .step .dark,
