@@ -781,7 +781,7 @@ section:nth-child(even) {
     }
 }
 
-/* ========== INTEREST FORM ========== */
+/* === Interest Form Section === */
 #interest {
     background: var(--white);
     padding: 60px 0;
@@ -789,12 +789,43 @@ section:nth-child(even) {
     border-radius: var(--radius);
 }
 
+#interest .container {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#interest .pill {
+    display: inline-flex;
+}
+
+#interest h2 {
+    text-align: center;
+    text-transform: lowercase;
+    color: var(--deep);
+    margin-bottom: 16px;
+}
+
+#interest .lead {
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+    max-width: 100%;
+    margin: 0 auto 32px;
+}
+
+/* --- Form --- */
 #interestForm {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 560px;
+    max-width: 100%;
     margin: 0 auto;
+}
+
+#interestForm .btn {
+    align-self: center;
+    min-width: 200px;
 }
 
 #interestForm input,
@@ -823,17 +854,33 @@ section:nth-child(even) {
     min-height: 120px;
 }
 
-#interestForm button {
-    align-self: flex-start;
-}
-
+/* --- Response Message --- */
 #interestResponse {
     text-align: center;
     margin-top: 16px;
+    margin-bottom: 0;
     font-size: 15px;
     color: var(--teal);
     font-weight: 600;
     min-height: 24px;
+}
+
+/* --- Mobile --- */
+@media (max-width: 640px) {
+    #interest .container {
+        max-width: 100%;
+    }
+
+    #interestForm input,
+    #interestForm textarea {
+        font-size: 15px;
+        padding: 14px 16px;
+    }
+
+    #interestForm .btn {
+        width: 100%;
+        max-width: 280px;
+    }
 }
 
 /* ========== FOOTER ========== */
@@ -1050,12 +1097,27 @@ footer {
     text-align: center;
 }
 
+.current-offerings .intro-text {
+    text-align: center;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .current-offerings .location-info {
     background: linear-gradient(135deg, rgba(43,166,166,.08), rgba(43,166,166,.04));
     border-radius: var(--radius-sm);
     padding: 28px 32px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     border-left: 4px solid var(--teal);
+}
+
+.current-offerings .location-info:last-of-type {
+    margin-bottom: 32px;
 }
 
 .current-offerings .location-info h4 {
@@ -1077,6 +1139,15 @@ footer {
     font-size: 16px;
     line-height: 1.7;
     color: var(--ink);
+}
+
+.current-offerings .location-info .class-description {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0,0,0,.06);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--muted);
 }
 
 .current-offerings .location-info .pricing-highlight {
@@ -1107,16 +1178,15 @@ footer {
     letter-spacing: -0.5px;
 }
 
-.current-offerings .cta-buttons {
+.current-offerings .location-info .class-button {
+    margin-top: 20px;
     display: flex;
-    gap: 16px;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 32px;
 }
 
-.current-offerings .cta-buttons .btn {
-    min-width: 200px;
+.current-offerings .location-info .class-button .btn {
+    width: auto;
+    padding: 13px 32px;
 }
 
 /* Future Offerings Note */
@@ -1207,7 +1277,8 @@ footer {
 }
 
 .offering-card .btn {
-    width: 100%;
+    width: auto;
+    padding: 13px 28px;
 }
 
 /* Booking Info Box */
