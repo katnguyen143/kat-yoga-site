@@ -1012,18 +1012,24 @@ footer {
     background: linear-gradient(180deg, var(--sand), rgba(255,255,255,.5));
 }
 
-#booking-page .pill {
-    margin-bottom: 16px;
-}
-
-#booking-page > .container > h2 {
-    margin-bottom: 16px;
-}
-
-#booking-page > .container > .lead {
-    max-width: 800px;
+/* Booking page header area */
+.booking-header-wrapper {
+    max-width: 900px;
     margin: 0 auto 48px;
-    text-align: center;
+}
+
+.booking-header-wrapper .pill {
+    margin-bottom: 16px;
+}
+
+.booking-header-wrapper h2 {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.booking-header-wrapper .lead {
+    text-align: left;
+    margin: 0;
 }
 
 /* Current Offerings Section */
