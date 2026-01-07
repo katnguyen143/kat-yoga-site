@@ -1020,10 +1020,26 @@ footer {
     }
 
     .menu .btn {
-        margin: 12px 24px;
+        background: var(--teal);
+        color: var(--white);
+        border: none;
+        border-radius: 0;
+        padding: 18px 24px;
         width: calc(100% - 48px);
-        justify-content: center;
+        margin: 12px 24px;
+        justify-content: flex-start;
     }
+
+    .menu .btn-outline {
+        background: var(--teal);
+        color: var(--white);
+        border: none;
+    }
+
+    .menu .btn:hover {
+        transform: none;
+    }
+}
 
     .grid-3 {
         grid-template-columns: 1fr;
