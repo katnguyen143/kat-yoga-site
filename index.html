@@ -41,7 +41,7 @@
                 <a href="index.html#schedule">schedule</a>
                 <a href="index.html#gallery">gallery</a>
                 <a href="index.html#contact">contact</a>
-                <a class="btn btn-outline" href="index.html#booking">book a class</a>
+                <a class="btn btn-outline" href="booking.html">book a class</a>
                 <a href="resources.html" class="link-journey">resources</a>
             </nav>
         </div>
@@ -57,7 +57,7 @@
                 matcha mornings, cat naps, and spontaneous handstands in your bedroom.
             </p>
             <div class="actions">
-                <a href="#booking" class="btn btn-primary">book a class</a>
+                <a href="booking.html" class="btn btn-primary">book a class</a>
                 <a href="#gallery" class="btn btn-outline">see the vibe</a>
             </div>
         </div>
@@ -219,63 +219,82 @@
             <span class="pill">gallery</span>
             <h2>yoga moments ♡</h2>
             <p class="lead">
-                A glimpse into moments of teaching, connection, and self-practice that continue to shape how I share yoga.
+                A glimpse into moments of teaching that continue to shape how I share yoga.
             </p>
 
             <!-- Teaching Moments -->
             <h3 class="gallery-subheading">teaching moments</h3>
-            <div class="gallery">
-                <a href="images/outsiders.jpeg" data-glightbox="Outdoor yoga class with Outsiders">
-                    <img loading="lazy" src="images/outsiders.jpeg" alt="Outdoor yoga class with Outsiders" />
-                </a>
-                <a href="images/toni.JPG" data-glightbox="Destress with Yoga class">
-                    <img loading="lazy" src="images/toni.JPG" alt="Yoga TA class" />
-                </a>
-                <a href="images/haadrin.jpg" data-glightbox="Private beach yoga class">
-                    <img loading="lazy" src="images/haadrin.jpg" alt="Private beach yoga class" />
-                </a>
-                <a href="images/esh.jpeg" data-glightbox="Indoor yoga class">
-                    <img loading="lazy" src="images/esh.jpeg" alt="Indoor yoga class" />
-                </a>
-
-                <a href="images/nestra-savasana.JPG" data-glightbox="Savasana at Nestra Beach Shala">
-                    <img loading="lazy" src="images/nestra-savasana.JPG" alt="Partner yoga class at Nestra" />
-                </a>
-                <a href="images/nestra-group.jpeg" data-glightbox="Group class at Nestra Beach Shala">
-                    <img loading="lazy" src="images/nestra-group.jpeg" alt="Group class at Nestra Beach Shala" />
-                </a>
-                <a href="images/hitotsubashi.jpeg" data-glightbox="Teaching at Hitotsubashi University in Tokyo">
-                    <img loading="lazy" src="images/hitotsubashi.jpeg" alt="Hitotsubashi yoga class" />
-                </a>
-                <a href="images/hitotsu-class.jpeg" data-glightbox="Teaching sequence building in Tokyo">
-                    <img loading="lazy" src="images/hitotsu-class.jpeg" alt="Teaching sequence building" />
-                </a>
+            <div class="gallery" id="teaching-gallery">
+                <div class="gallery-slides">
+                    <div class="gallery-slide active">
+                        <img src="images/outsiders.jpeg" alt="Outdoor yoga class with Outsiders" />
+                        <div class="gallery-caption">Outdoor yoga class with Outsiders</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/toni.JPG" alt="Destress with Yoga class" />
+                        <div class="gallery-caption">Destress with Yoga class</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/haadrin.jpg" alt="Private beach yoga class" />
+                        <div class="gallery-caption">Private beach yoga class</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/esh.jpeg" alt="Indoor yoga class" />
+                        <div class="gallery-caption">Indoor yoga class</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/nestra-savasana.JPG" alt="Savasana at Nestra Beach Shala" />
+                        <div class="gallery-caption">Savasana at Nestra Beach Shala</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/nestra-group.jpeg" alt="Group class at Nestra Beach Shala" />
+                        <div class="gallery-caption">Group class at Nestra Beach Shala</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/hitotsubashi.jpeg" alt="Teaching at Hitotsubashi University in Tokyo" />
+                        <div class="gallery-caption">Teaching at Hitotsubashi University in Tokyo</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/hitotsu-class.jpeg" alt="Teaching sequence building in Tokyo" />
+                        <div class="gallery-caption">Teaching sequence building in Tokyo</div>
+                    </div>
+                    <button class="gallery-prev" onclick="moveSlide(-1, 'teaching-gallery')">❮</button>
+                    <button class="gallery-next" onclick="moveSlide(1, 'teaching-gallery')">❯</button>
+                </div>
+                <div class="gallery-dots" id="teaching-dots"></div>
             </div>
 
-            <!-- Personal Practice -->
+            <!-- 
             <h3 class="gallery-subheading">personal practice</h3>
-            <div class="gallery">
-                <a href="images/handstand.JPG" data-glightbox="Handstand on the beach">
-                    <img loading="lazy" src="images/handstand.JPG" alt="Handstand on the beach" />
-                </a>
-                <a href="images/h2h.JPG" data-glightbox="H2H at Zen Beach">
-                    <img loading="lazy" src="images/h2h.JPG" alt="H2H acroyoga pose at Zen Beach" />
-                </a>
-                <a href="images/lizard.JPG" data-glightbox="Lizard pose">
-                    <img loading="lazy" src="images/lizard.JPG" alt="Lizard pose yoga" />
-                </a>
-                <a href="images/crow.JPG" data-glightbox="One-legged crow pose">
-                    <img loading="lazy" src="images/crow.JPG" alt="One-legged crow pose" />
-                </a>
+            <div class="gallery" id="practice-gallery">
+                <div class="gallery-slides">
+                    <div class="gallery-slide active">
+                        <img src="images/handstand.JPG" alt="Handstand on the beach" />
+                        <div class="gallery-caption">Handstand on the beach</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/h2h.JPG" alt="H2H acroyoga pose at Zen Beach" />
+                        <div class="gallery-caption">H2H acroyoga pose at Zen Beach</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/lizard.JPG" alt="Lizard pose yoga" />
+                        <div class="gallery-caption">Lizard pose yoga</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/crow.JPG" alt="One-legged crow pose" />
+                        <div class="gallery-caption">One-legged crow pose</div>
+                    </div>
+                    <button class="gallery-prev" onclick="moveSlide(-1, 'practice-gallery')">❮</button>
+                    <button class="gallery-next" onclick="moveSlide(1, 'practice-gallery')">❯</button>
+                </div>
+                <div class="gallery-dots" id="practice-dots"></div>
             </div>
-        </div>
-    </section>
+    </section>Personal Practice -->
 
 
-    <!-- Booking / Contact -->
+    <!-- 
     <section id="booking" aria-label="Booking and contact">
         <div class="container">
-            <!-- Booking Info -->
             <div class="left" style="max-width:700px; margin:0 auto;">
                 <span class="pill">booking</span>
                 <h2>reserve a class</h2>
@@ -350,7 +369,7 @@
                             <p class="student-note">*Student discount available with valid student ID.</p>
                         </div>
                     </div>
-                </section>
+                </section>Booking / Contact -->
 
                 <section id="interest">
                     <div class="container">
@@ -400,7 +419,7 @@
             </div>
             <div>
                 <h3 style="margin:0 0 8px;font-family:Raleway,sans-serif">quick links</h3>
-                <p><a href="journey.html">my journey</a><br><a href="#offerings">classes</a><br><a href="#schedule">schedule</a><br><a href="#gallery">gallery</a><br><a href="#booking">book</a><br /><a href="resources.html#resources">resources</a><br></p>
+                <p><a href="journey.html">my journey</a><br><a href="#offerings">classes</a><br><a href="#schedule">schedule</a><br><a href="#gallery">gallery</a><br><a href="booking.html">book</a><br /><a href="resources.html#resources">resources</a><br></p>
             </div>
             <div>
                 <h3 style="margin:0 0 8px;font-family:Raleway,sans-serif">contact</h3>
@@ -606,6 +625,51 @@
 
             card.setAttribute('data-lang', lang);
         });</script>
+
+        <script>
+            // Initialize slideshows
+            function initGallery(galleryId) {
+                const gallery = document.getElementById(galleryId);
+                const slides = gallery.querySelectorAll('.gallery-slide');
+                const dotsContainer = gallery.querySelector('.gallery-dots');
+                
+                // Create dots
+                slides.forEach((_, index) => {
+                    const dot = document.createElement('button');
+                    dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
+                    dot.onclick = () => showSlide(index, galleryId);
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            function showSlide(n, galleryId) {
+                const gallery = document.getElementById(galleryId);
+                const slides = gallery.querySelectorAll('.gallery-slide');
+                const dots = gallery.querySelectorAll('.gallery-dot');
+                
+                if (!gallery.currentSlide) gallery.currentSlide = 0;
+                
+                if (n >= slides.length) gallery.currentSlide = 0;
+                if (n < 0) gallery.currentSlide = slides.length - 1;
+                if (n >= 0 && n < slides.length) gallery.currentSlide = n;
+                
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                slides[gallery.currentSlide].classList.add('active');
+                dots[gallery.currentSlide].classList.add('active');
+            }
+
+            function moveSlide(direction, galleryId) {
+                const gallery = document.getElementById(galleryId);
+                if (!gallery.currentSlide) gallery.currentSlide = 0;
+                showSlide(gallery.currentSlide + direction, galleryId);
+            }
+
+            // Initialize both galleries
+            initGallery('teaching-gallery');
+            initGallery('practice-gallery');
+            </script>
 
 </body>
 </html>

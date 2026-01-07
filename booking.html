@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a Class - Yoga with Kat</title>
+    <meta name="description" content="Book yoga classes with Kat at Ladera Recreation District and private sessions" />
+    <link rel="icon" type="image/png" href="https://katnguyen143.github.io/yogawithkat/images/kat-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/kat-logo-t.png" alt="Kat Yoga logo" class="logo" />
+                <span>yoga & acroyoga with kat ♡</span>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu" id="mobileMenu" aria-label="Primary">
+                <a href="journey.html">my journey</a>
+                <a href="index.html#offerings">classes</a>
+                <a href="index.html#schedule">schedule</a>
+                <a href="index.html#gallery">gallery</a>
+                <a href="index.html#contact">contact</a>
+                <a class="btn btn-outline" href="booking.html">book a class</a>
+                <a href="resources.html">resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Page -->
+    <section id="booking-page">
+        <div class="container">
+            <span class="pill">book your practice</span>
+            <h2>kat's offerings</h2>
+            <p class="lead">
+                I'm currently teaching weekly group classes at Ladera Recreation District, with private sessions also available. 
+                Check the schedule below for upcoming classes!
+            </p>
+
+            <!-- Current Group Classes -->
+            <div class="current-offerings">
+                <h3>current group classes</h3>
+                
+                <div class="location-info">
+                    <h4>Ladera Recreation District</h4>
+                    <p>
+                        <strong>Location:</strong> Portola Valley, CA<br>
+                        <strong>Style:</strong> Ashtanga-Vinyasa Flow<br>
+                        <strong>Level:</strong> All levels welcome
+                    </p>
+                    
+                    <div class="pricing-highlight">
+                        <div class="price-item">
+                            <span class="price-label">Members</span>
+                            <span class="price-value">$20</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-label">Non-Members</span>
+                            <span class="price-value">$25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="index.html#schedule" class="btn btn-primary">view class schedule</a>
+                    <a href="https://www.laderarec.org/" class="btn btn-outline" target="_blank" rel="noopener">visit website</a>
+                </div>
+
+                <div class="future-offerings-note">
+                    <h4>More Options Coming Soon ♡</h4>
+                    <p>
+                        I'm planning to offer independent community classes, class packages, and student discounts soon. 
+                        Join the interest list to be notified when they launch!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Private & Other Options -->
+            <div class="other-offerings-section">
+                <h3>Private Sessions & Other Offerings</h3>
+                
+                <div class="offerings-grid">
+                    <!-- Private Yoga -->
+                    <div class="offering-card">
+                        <div class="icon">
+                            <img src="images/acro-t.png" alt="Private Yoga">
+                        </div>
+                        <h4>private yoga</h4>
+                        <p>
+                            One-on-one sessions tailored to your goals, pace, and experience level. 
+                            Perfect for beginners or anyone wanting personalized attention.
+                        </p>
+                        <a href="https://wa.me/16506700843?text=Hi%20Kat!%20I'm%20interested%20in%20booking%20a%20private%20yoga%20session" 
+                           class="btn btn-primary" target="_blank" rel="noopener">
+                            inquire via whatsapp
+                        </a>
+                    </div>
+
+                    <!-- Private Acroyoga -->
+                    <div class="offering-card">
+                        <div class="icon">
+                            <img src="images/group-t.png" alt="Private Acroyoga">
+                        </div>
+                        <h4>private acroyoga</h4>
+                        <p>
+                            Learn the foundations of acro or practice flows, whips, and pops with me! 
+                            As a seasoned flyer, I specialize in helping bases build strength and communication.
+                        </p>
+                        <a href="https://wa.me/16506700843?text=Hi%20Kat!%20I'm%20interested%20in%20booking%20a%20private%20acroyoga%20session" 
+                           class="btn btn-primary" target="_blank" rel="noopener">
+                            inquire via whatsapp
+                        </a>
+                    </div>
+
+                    <!-- Corporate/Events -->
+                    <div class="offering-card">
+                        <div class="icon">
+                            <img src="images/donation-t.png" alt="Corporate Yoga">
+                        </div>
+                        <h4>corporate & events</h4>
+                        <p>
+                            Bring yoga to your workplace, retreat, or special event. 
+                            Customized classes for teams and groups of any size.
+                        </p>
+                        <a href="mailto:kathrynnguyen@berkeley.edu?subject=Corporate%20Yoga%20Inquiry" 
+                           class="btn btn-primary">
+                            email to inquire
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Box -->
+            <div class="booking-info-box">
+                <h3>before your first class</h3>
+                <p>
+                    Please arrive at least 10 minutes early to settle in. Yoga is best practiced on an empty stomach, 
+                    so avoid food for about two hours before class. Bring a mat, water, and an open mind ♡
+                </p>
+                <a href="index.html#schedule" class="btn btn-primary">check schedule</a>
+                <a href="https://wa.me/16506700843" class="btn btn-outline" target="_blank" rel="noopener">questions? whatsapp me</a>
+            </div>
+
+            <!-- Tips -->
+            <div class="booking-tips">
+                <h4>good to know ♡</h4>
+                <ul>
+                    <li>Payment for Ladera classes is handled directly through the recreation district</li>
+                    <li>Private session rates are flexible and discussed on a case-by-case basis</li>
+                    <li>Donation-based community classes coming soon – no one turned away for lack of funds</li>
+                    <li>All levels are welcome – modifications provided for every pose</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" aria-label="Footer">
+        <div class="container footgrid">
+            <div>
+                <div class="brand">
+                    <img src="images/kat-logo-t.png" alt="Kat Yoga logo" class="logo">
+                    <span>yoga & acroyoga with kat ♡</span>
+                </div>
+                <p style="margin:10px 0 0;color:var(--muted)">Belmont, California, USA</p>
+                <div class="socials">
+                    <a href="https://instagram.com/kat.acro" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6-1a1 1 0 100 2 1 1 0 000-2z" /></svg>
+                    </a>
+                    <a href="https://facebook.com/katnewyen/" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7a1 1 0 011-1h3V2h-3a5 5 0 00-5 5v3H6v4h3v8h4z" /></svg>
+                    </a>
+                    <a href="https://wa.me/16506700843" aria-label="WhatsApp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" style="font-size:24px; color:black;"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin:0 0 8px;font-family:'IBM Plex Sans',sans-serif">quick links</h3>
+                <p><a href="journey.html">my journey</a><br><a href="index.html#offerings">classes</a><br><a href="index.html#schedule">schedule</a><br><a href="index.html#gallery">gallery</a><br><a href="booking.html">book</a><br><a href="resources.html">resources</a></p>
+            </div>
+            <div>
+                <h3 style="margin:0 0 8px;font-family:'IBM Plex Sans',sans-serif">contact</h3>
+                <p style="margin:0 0 6px">Email: <a href="mailto:kathrynnguyen@berkeley.edu">kathrynnguyen@berkeley.edu</a></p>
+                <p style="margin:0 0 12px">Phone/WhatsApp: <a href="https://wa.me/16506700843" target="_blank" rel="noopener">+1 650 670 0843</a></p>
+                <p style="margin:0;color:var(--muted)">© <span id="year"></span> Kathryn Nguyen · RYT-200 Certified Yoga Teacher</p>
+                <div class="badge-wrapper">
+                    <a href="https://app.yogaalliance.org/teacherpublicprofile?id=003TR00001BAbDzYAL" target="_blank" rel="noopener">
+                        <img src="images/RYT200.png" alt="RYT-200 Certification Badge" class="badge">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const icon = document.querySelector('.mobile-toggle i');
+            menu.classList.toggle('open');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        }
+    </script>
+
+</body>
+</html>
