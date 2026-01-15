@@ -138,7 +138,7 @@ var config = {
             title: 'Yoga Instructor — Ladera Recreation District',
             subtitle: 'Portola Valley, California',
             date: 'Nov 2025 - Present',
-            description: 'Teach a weekly all-levels vinyasa flow blending gentle warm-ups, breathwork, and accessible dynamic poses to build mobility and balance.',
+            description: 'Teach a weekly all-levels Ashtanga-Vinyasa flow blending gentle warm-ups, breathwork, and accessible dynamic poses to build mobility and balance.',
             image: 'images/esh.jpeg',
             location: {
                 center: [-122.19958548726125, 37.403524445910385],
