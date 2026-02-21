@@ -146,6 +146,20 @@ var config = {
                 pitch: 45,
                 bearing: 0
             }
+        },
+        {
+            id: 'ap',
+            title: 'Acro/Aerial Instructor — Athletic Playground',
+            subtitle: 'Emeryville, California',
+            date: 'Jan 2025 - Present',
+            description: 'Co-teach a weekly youth performance workshop, instructing partner acrobatics and foundational silks and lyra.',
+            image: 'images/ap.jpeg',
+            location: {
+                center: [-122.28085, 37.83665],
+                zoom: 13,
+                pitch: 45,
+                bearing: 0
+            }
         }
     ]
 
