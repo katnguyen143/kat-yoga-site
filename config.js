@@ -1,7 +1,4 @@
 var config = {
-    // style: 'mapbox://styles/mapbox/streets-v12',
-    // leave commented to use Mapbox Standard Style
-    accessToken: 'pk.eyJ1Ijoia2F0bmd1eWVuIiwiYSI6ImNtZmd2azY3MTA1Ynoya3B5ajR1aWU4MjAifQ.p68L4RzmRLZ8fZzy3JxzfA',
     showMarkers: true,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
