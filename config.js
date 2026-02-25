@@ -1,4 +1,5 @@
 var config = {
+    accessToken: 'pk.eyJ1Ijoia2F0bmd1eWVuIiwiYSI6ImNtbTE1MnQycDA1dGIycW42bWhiempvMXgifQ.tTwaNRubcRLNMGx57VB9pw',
     showMarkers: true,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
