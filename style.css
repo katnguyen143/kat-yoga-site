@@ -444,7 +444,7 @@ section:nth-child(even) {
 /* ========== SCHEDULE ========== */
 .schedule {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 32px;
 }
@@ -457,12 +457,33 @@ section:nth-child(even) {
 
 .slot .meta {
     display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
     color: var(--muted);
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 12px;
+}
+
+.slot .meta a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+.slot .meta-location {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.slot .meta-location a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+.slot .meta {
+    margin-bottom: 4px;
 }
 
 .slot h4 {
@@ -479,6 +500,16 @@ section:nth-child(even) {
 
 .slot .actions {
     margin-top: 16px;
+}
+
+.slot a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .schedule {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ========== TESTIMONIALS ========== */
