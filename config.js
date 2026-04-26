@@ -158,6 +158,20 @@ var config = {
                 pitch: 45,
                 bearing: 0
             }
+        },
+        {
+            id: 'csm',
+            title: 'Yoga Instructor — SMCCCD',
+            subtitle: 'Redwood City, California',
+            date: 'March 2026 - Present',
+            description: 'Teach mixed-level Ashtanga-Vinyasa, meditation, and stretch classes to students at the San Mateo Community College District.',
+            image: 'images/csm.jpeg',
+            location: {
+                center: [-122.26473, 37.44712],
+                zoom: 13,
+                pitch: 45,
+                bearing: 0
+            }
         }
     ]
 
