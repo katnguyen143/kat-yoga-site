@@ -150,7 +150,7 @@ var config = {
             title: 'Acro/Aerial Instructor — Athletic Playground',
             subtitle: 'Emeryville, California',
             date: 'Jan 2026 - April 2026',
-            description: 'Co-teach a weekly youth performance workshop, instructing partner acrobatics and foundational silks and lyra.',
+            description: 'Co-taught a weekly youth performance workshop, instructing partner acrobatics and foundational silks and lyra.',
             image: 'images/ap.jpeg',
             location: {
                 center: [-122.28085, 37.83665],
@@ -164,7 +164,7 @@ var config = {
             title: 'Yoga Instructor — SMCCD',
             subtitle: 'Redwood City, California',
             date: 'March 2026 - Present',
-            description: 'Teach mixed-level Ashtanga-Vinyasa, Yin Yoga, Hatha, meditation, and stretch classes to students at the San Mateo Community College District.',
+            description: 'Teach mixed-level Ashtanga-Vinyasa, Yin Yoga, Hatha, meditation, and stretch classes to students at the San Mateo County Community College District.',
             image: 'images/csm.jpeg',
             location: {
                 center: [-122.26473, 37.44712],
