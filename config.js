@@ -135,7 +135,7 @@ var config = {
             id: 'ladera_rec',
             title: 'Yoga Instructor — Ladera Recreation District',
             subtitle: 'Portola Valley, California',
-            date: 'Nov 2025 - Present',
+            date: 'Nov 2025 - June 2026',
             description: 'Teach a weekly all-levels Ashtanga-Vinyasa flow blending gentle warm-ups, breathwork, and accessible dynamic poses to build mobility and balance.',
             image: 'images/esh.jpeg',
             location: {
@@ -168,6 +168,20 @@ var config = {
             image: 'images/csm.jpeg',
             location: {
                 center: [-122.26473, 37.44712],
+                zoom: 13,
+                pitch: 45,
+                bearing: 0
+            }
+        },
+        {
+            id: 'uys',
+            title: 'Yoga Instructor — Urban Yoga Spa',
+            subtitle: 'Seattle, Washington',
+            date: 'May 2026 - Present',
+            description: 'Teach a weekly hot yoga flow class, leading students through dynamic, breath-linked sequences while fostering a welcoming and accessible environment for all levels.',
+            //image: 'images/csm.jpeg',
+            location: {
+                center: [-122.33871174535325, 47.61268589492677],
                 zoom: 13,
                 pitch: 45,
                 bearing: 0
